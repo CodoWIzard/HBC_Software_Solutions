@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14
+class ComposerStaticInit74ab73114a599f4a2997b6a284f9e273
 {
     public static $files = array (
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
@@ -45,6 +45,7 @@ class ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14
         array (
             'Symfony\\UX\\Turbo\\' => 17,
             'Symfony\\UX\\StimulusBundle\\' => 26,
+            'Symfony\\Runtime\\Symfony\\Component\\' => 34,
             'Symfony\\Polyfill\\Php83\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
@@ -57,6 +58,7 @@ class ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14
             'Symfony\\Contracts\\HttpClient\\' => 29,
             'Symfony\\Contracts\\EventDispatcher\\' => 34,
             'Symfony\\Contracts\\Cache\\' => 24,
+            'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\WebLink\\' => 26,
             'Symfony\\Component\\VarExporter\\' => 30,
             'Symfony\\Component\\VarDumper\\' => 28,
@@ -69,6 +71,7 @@ class ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14
             'Symfony\\Component\\Security\\Http\\' => 32,
             'Symfony\\Component\\Security\\Csrf\\' => 32,
             'Symfony\\Component\\Security\\Core\\' => 32,
+            'Symfony\\Component\\Runtime\\' => 26,
             'Symfony\\Component\\Routing\\' => 26,
             'Symfony\\Component\\PropertyInfo\\' => 31,
             'Symfony\\Component\\PropertyAccess\\' => 33,
@@ -90,6 +93,7 @@ class ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14
             'Symfony\\Component\\ExpressionLanguage\\' => 37,
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\ErrorHandler\\' => 31,
+            'Symfony\\Component\\Dotenv\\' => 25,
             'Symfony\\Component\\DomCrawler\\' => 29,
             'Symfony\\Component\\DependencyInjection\\' => 38,
             'Symfony\\Component\\CssSelector\\' => 30,
@@ -156,6 +160,7 @@ class ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14
         ),
         'A' => 
         array (
+            'App\\Tests\\' => 10,
             'App\\' => 4,
         ),
     );
@@ -186,6 +191,10 @@ class ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14
         'Symfony\\UX\\StimulusBundle\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/stimulus-bundle/src',
+        ),
+        'Symfony\\Runtime\\Symfony\\Component\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/runtime/Internal',
         ),
         'Symfony\\Polyfill\\Php83\\' => 
         array (
@@ -235,6 +244,10 @@ class ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14
         array (
             0 => __DIR__ . '/..' . '/symfony/cache-contracts',
         ),
+        'Symfony\\Component\\Yaml\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
         'Symfony\\Component\\WebLink\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/web-link',
@@ -282,6 +295,10 @@ class ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14
         'Symfony\\Component\\Security\\Core\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/security-core',
+        ),
+        'Symfony\\Component\\Runtime\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/runtime',
         ),
         'Symfony\\Component\\Routing\\' => 
         array (
@@ -366,6 +383,10 @@ class ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14
         'Symfony\\Component\\ErrorHandler\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/error-handler',
+        ),
+        'Symfony\\Component\\Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/dotenv',
         ),
         'Symfony\\Component\\DomCrawler\\' => 
         array (
@@ -559,9 +580,13 @@ class ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14
         array (
             0 => __DIR__ . '/..' . '/composer/semver/src',
         ),
+        'App\\Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
+        ),
         'App\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/website-skeleton/src',
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
@@ -1218,9 +1243,9 @@ class ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit24c9b006abcbcb50b7cdf56e63750d14::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit74ab73114a599f4a2997b6a284f9e273::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit74ab73114a599f4a2997b6a284f9e273::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit74ab73114a599f4a2997b6a284f9e273::$classMap;
 
         }, null, ClassLoader::class);
     }
